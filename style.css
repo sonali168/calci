@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --dark-blue:rgb(32, 32, 53);
+    --gray: gray;
+    --red: rgb(222, 50, 50);
+    --dark-gray: rgb(72, 63, 63);
+    --violet: rgb(156, 72, 156);
+    --white: #fff;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background-color: var(--dark-gray);
+}
+
+.calculator{
+    width: 30%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 1rem;
+}
+
+.display-screen{
+    height: 20%;
+    width: 100%;
+}
+
+.user-input{
+    background-color: var(--dark-blue);
+    color: var(--white);
+    border-radius: 16px;
+    padding: 12px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    text-align: right;
+    font-size: 3rem;
+}
+
+.keypad{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 40%;
+    height: 100%;
+    padding: 5%;
+    gap: 2rem;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+    gap: 1rem;
+}
+
+.key, .delete-key {
+    background-color: var(--white);
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.delete-key{
+    background-color: var(--red);
+}
+
+.reset-key, .answer-key{
+    width: 47%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background-color: var(--gray);
+}
+
+.key:hover, .answer-key:hover, .reset-key:hover, .delete-key:hover{
+    cursor: pointer;
+}
+
